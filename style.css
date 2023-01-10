@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid grey;
+  width: 300px;
+  height: 100%;
+}
+
+#navbar header {
+  margin: 10px;
+  text-align: center;
+}
+
+#main-doc {
+  position: absolute;
+  left: 350px;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  list-style-type: none;
+  border-top: 1px solid #222;
+  font-size: 1.1em;
+}
+
+li a {
+  text-decoration: none;
+  padding: 13px;
+  color: #666;
+  display: block;
+}
+
+header {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+dl,
+#Macam_warna ul {
+  margin-left: 1.5rem;
+  color: #666;
+}
+
+dt {
+  font-weight: 600;
+}
+
+p,
+dd {
+  margin-left: 1.5em;
+  line-height: 1.5em;
+  color: #666;
+}
+
+dd {
+  margin: 10px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#Kucing {
+  margin-top: 20px;
+}
+
+#Referensi p a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #navbar {
+    position: relative;
+    display: block;
+    height: 250px;
+    width: 100%;
+  }
+
+  #navbar ul {
+    height: 200px;
+    overflow: auto;
+  }
+
+  #main-doc {
+    position: relative;
+    display: block;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
